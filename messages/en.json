@@ -1,0 +1,16 @@
+{
+    "Index":{
+        "title" : "next-intl example",
+        "description" : "Welcome to Next js"
+    },
+    "NotFoundPage":{
+        "title" : "Page Not Found",
+        "description" : "Welcome to not Found Page"
+    },
+    "Navigation":{
+        "home" : "Home"
+    },
+    "Footer":{
+        "copyright" : "Copy right 2024"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "Index":{
+        "title" : "សួស្ដី",
+        "description" : "ស្វាគមន to Next js"
+    },
+    "NotFoundPage":{
+        "title" : "អត់ឃើញ",
+        "description" : "បាច់រកបាច់អាច់អីទេ"
+    },
+    "Navigation":{
+        "home" : "ទំព័រដើម"
+    },
+    "Footer":{
+        "copyright" : "ថតចម្លង"
+    }
+}
