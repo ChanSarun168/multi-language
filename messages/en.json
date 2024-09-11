@@ -8,9 +8,15 @@
         "description" : "Welcome to not Found Page"
     },
     "Navigation":{
-        "home" : "Home"
+        "home" : "Home",
+        "about" : "About"
     },
     "Footer":{
         "copyright" : "Copy right 2024"
+    },
+    "about" : {
+        "title" : "Welcome to about page",
+        "description" : "this is about page"
     }
+
 }
