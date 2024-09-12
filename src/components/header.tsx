@@ -9,17 +9,19 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="flex items-center justify-between">
-        <div className="flex space-x-4">
-          {/* Home Link with locale */}
-          <Link href={`/${locale}/`}>{t('home')}</Link>
-
-          {/* About Link with locale */}
-          <Link href={`/${locale}/about`}>{t('about')}</Link>
+      <nav className="w-screen bg-purple-500 flex justify-center h-[100px]">
+        <div className="w-[1024px] flex justify-between items-center">
+          <img src="https://via.placeholder.com/80" alt="logo" className="rounded-full"></img>
+          <div className="flex space-x-10">
+            {/* Home Link with locale */}
+            <Link href={`/${locale}/`}>{t('home')}</Link>
+            <Link href={`/${locale}/about`}>{t('about')}</Link>
+            <Link href={`/${locale}/ourteam`}>{t('our team')}</Link>
+            <Link href={`/${locale}/expertise`}>{t('expertise')}</Link>
+          </div>  
+          {/* Language Switcher */}
+          <LocalSwitcher />
         </div>
-        
-        {/* Language Switcher */}
-        <LocalSwitcher />
       </nav>
     </header>
   );

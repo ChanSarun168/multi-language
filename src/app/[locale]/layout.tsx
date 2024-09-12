@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { Roboto_Slab , Noto_Serif_Khmer } from "next/font/google";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const robotoslab = Roboto_Slab({
+  subsets: ["latin"],
+  weight: "300"
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const khmerFont = Noto_Serif_Khmer({
+  subsets: ["latin"],
+  weight: "300"
 });
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -31,14 +31,16 @@ export default function RootLayout({
   children,
   params : {locale}
 }: Readonly<RootLayoutProp>) {
+  const activeFontClass =
+  locale === "kh" ? khmerFont.className : robotoslab.className;
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={activeFontClass}
       >
-        <div className="flex flex-col min-h-screen max-w-4xl mx-auto">
+        <div className="flex flex-col min-h-screen">
           <Header></Header>
-          <div className="flex-grow mt-20">{children}</div>
+          <div className="flex-grow">{children}</div>
           <Footer></Footer>
         </div>
       </body>

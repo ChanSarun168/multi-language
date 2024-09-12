@@ -1,7 +1,11 @@
 {
     "Index":{
         "title" : "next-intl example",
-        "description" : "Welcome to Next js"
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quibusdam distinctio obcaecati iure, quaerat id libero recusandae explicabo natus cum labore perspiciatis. Tenetur, dolorem. Eligendi nostrum, et quam consequatur nam eum blanditiis harum, nulla officiis modi cumque mollitia reiciendis sunt, asperiores perspiciatis voluptates. Hic inventore nesciunt unde cum delectus nobis?",
+        "vision" : "Vision",
+        "our vision" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, veritatis similique quaerat, error eveniet dolorum in illum tempora labore ut harum veniam exercitationem autem tempore magni nobis eos commodi nulla!",
+        "mission" : "Mission",
+        "our mission" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, veritatis similique quaerat, error eveniet dolorum in illum tempora labore ut harum veniam exercitationem autem tempore magni nobis eos commodi nulla!"
     },
     "NotFoundPage":{
         "title" : "Page Not Found",
@@ -9,7 +13,9 @@
     },
     "Navigation":{
         "home" : "Home",
-        "about" : "About"
+        "about" : "About",
+        "our team" : "Our Team",
+        "expertise" : "Expertise"
     },
     "Footer":{
         "copyright" : "Copy right 2024"

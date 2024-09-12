@@ -1,12 +1,15 @@
 import { notFound } from "next/navigation";
 import { getRequestConfig } from "next-intl/server";
 
-const locales = ['en' , 'kh'];
+// Specify the type of locales as a string array
+const locales: string[] = ['en', 'kh'];
 
-export default getRequestConfig(async({locale})=>{
-    if(!locales.includes(locale as any)) notFound();
+export default getRequestConfig(async ({ locale }: { locale: string }) => {
+  // Directly check if locale is included in the list without casting to 'any'
+  if (!locales.includes(locale)) notFound();
 
-    return {
-        messages: (await import(`../messages/${locale}.json`)).default
-    }
-})
+  // Dynamically import locale-specific messages
+  return {
+    messages: (await import(`../messages/${locale}.json`)).default,
+  };
+});
